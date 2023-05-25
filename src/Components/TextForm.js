@@ -37,11 +37,11 @@ export default function TextForm(props) {
       <h1>{props.heading}</h1>  
     <textarea className="form-control" value = {text} onChange ={handleonchange} style={{backgroundColor:props.mode==='dark'?'#13466e':'white',color:props.mode==='dark'?'white':'#042743'}} id="myBox" rows="8" ></textarea>
     </div>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={handleupclick}>Convert to Uppercase</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={handleloclick}>Convert to Lowercase</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={handleclearclick}>Clear Text</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={handlecopyclick}>Copy Text</button>
-    <button disabled={text.length===0} className="btn btn-primary mx-1" onClick={handleresclick}>Remove Extra Spaces</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleupclick}>Convert to Uppercase</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleloclick}>Convert to Lowercase</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleclearclick}>Clear Text</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handlecopyclick}>Copy Text</button>
+    <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleresclick}>Remove Extra Spaces</button>
     </div>
     <div className="container my-3" style={{color:props.mode==='dark'?'white':'#042743'}}>
         <h1>Your Text Summary</h1>
